@@ -7,7 +7,7 @@ Configuration:
 * X = 0.5
 * N = Number of terms = 4,000,000,000
 * Compute: exp(X) = 1 + X + (X^2 / 2!) + (X^3 / 3!) + ... + (X^N / N!)
-* = 1.6487 when N = 100
+* = 1.648721271 on my calculator app
   
 Rough elapsed times:
 * Golang and Rust 5.5s
