@@ -6,7 +6,7 @@ Taylor Series expansion performance comparison:
 Configuration:
 * X = 0.5
 * N = Number of terms = 4,000,000,000
-* Compute: exp(X) = 1 + X + (X^2 / 2!) + (X^3 / 3!) + (X^N / N!)
+* Compute: exp(X) = 1 + X + (X^2 / 2!) + (X^3 / 3!) + ... + (X^N / N!)
   
 Rough elapsed times:
 * Golang and Rust 5.5s
