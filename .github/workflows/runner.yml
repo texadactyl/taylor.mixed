@@ -27,7 +27,7 @@ jobs:
     - name: Where am I?
       run: |
         pwd
-        ls -R .
+        tree
 
     - name: Setup Golang
       uses: actions/setup-go@main
