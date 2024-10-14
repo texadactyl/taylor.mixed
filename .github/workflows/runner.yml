@@ -53,16 +53,16 @@ jobs:
       
     - name: Run Java
       run: |
-        cd ../taylor.java
+        cd taylor.java
         javac main.java
         java main
 
     - name: Run Rust
       run: |
-        cd ../taylor.rs
+        cd taylor.rs
         cargo run
 
     - name: Run Zig
       run: |
-        cd ../taylor.zig
+        cd taylor.zig
         zig run main.zig
