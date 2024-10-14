@@ -30,7 +30,7 @@ jobs:
           override: true
     - uses: actions-rs/cargo@v1
       with:
-          command: test
+          command: version
 
     - name: Setup Golang
       uses: actions/setup-go@main
