@@ -1,0 +1,63 @@
+name: Rust
+
+on:
+  push:
+    paths-ignore:
+      - '*.md'
+    branches: [ "main" ]
+  pull_request:
+    paths-ignore:
+      - '*.md'
+    branches: [ "main" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build_and_run:
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Golang
+      uses: actions/setup-go@main
+      with:
+          go-version: '1.21.x'
+          
+    - name: Setup Java
+      uses: actions/setup-java@main
+      with:
+        distribution: 'oracle'
+        java-version: '21'
+
+    - name: Setup Rust
+      uses: actions-rust-lang/setup-rust-toolchain@v1
+
+    - name: Setup Zig
+      uses: mlugg/setup-zig@v1
+
+    - name: Run Golang
+      run: |
+        cd taylor.go
+        go run main.go
+      
+    - name: Run Java
+      run: |
+        cd ../taylor.java
+        javac main.java
+        java main
+
+    - name: Run Rust
+      run: |
+        cd ../taylor.rs
+        cargo run
+
+    - name: Run Zig
+      run: |
+        cd ../taylor.zig
+        zig run main.zig
