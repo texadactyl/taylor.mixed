@@ -17,5 +17,6 @@ Rough execution elapsed times on Github Actions Ubuntu (does not include compile
 Rough execution elapsed times on my laptop Ubuntu (more reliable):
 * Golang 4.84s
 * Rust 4.86s
+* C++ 5.00s
 * Java 10.64s
 * Zig 12.27s
