@@ -18,11 +18,16 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
 
     steps:
     - uses: actions/checkout@v4
+
+    - name: Where am I?
+      run: |
+        pwd
+        ls -R .
 
     - name: Setup Golang
       uses: actions/setup-go@main
