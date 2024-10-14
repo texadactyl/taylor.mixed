@@ -23,11 +23,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-
-    - name: Where am I?
-      run: |
-        pwd
-        tree
+    - uses: actions-rs/toolchain@v1
+      with:
+          profile: minimal
+          toolchain: stable
+          override: true
+    - uses: actions-rs/cargo@v1
+      with:
+          command: test
 
     - name: Setup Golang
       uses: actions/setup-go@main
@@ -39,9 +42,6 @@ jobs:
       with:
         distribution: 'oracle'
         java-version: '21'
-
-    - name: Setup Rust
-      uses: actions-rust-lang/setup-rust-toolchain@v1
 
     - name: Setup Zig
       uses: mlugg/setup-zig@v1
