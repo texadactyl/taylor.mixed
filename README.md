@@ -20,3 +20,13 @@ Rough execution elapsed times on my laptop Ubuntu (more reliable):
 * C++ 5.00s
 * Java 10.64s
 * Zig 12.27s
+
+==================
+
+Windows 11 x64 (IntelUltra 7 155H @3.80 GHz, 32GB RAM)
+
+* Rust 3.77
+* Golang 4.32s
+* Zig 9.94
+* Java 22.18 (best result of several runs)
+  
