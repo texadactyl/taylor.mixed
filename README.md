@@ -14,7 +14,11 @@ Rough execution elapsed times on Github Actions Ubuntu (does not include compile
 * Java 12.4s
 * Zig 16.4s
 
-Rough execution elapsed times on my laptop Ubuntu (more reliable):
+Measuring execution elapsed times  off-line systems are more reliable than Github Actions (varying system-wide loads).
+
+==================
+
+Xubuntu 24.04.up-to-date (Acer A515-44-R2SA, AMD Ryzen 7 4700U 2- 4.1 GHz, 16GB RAM)
 * Golang 4.84s
 * Rust 4.86s
 * C++ 5.00s
