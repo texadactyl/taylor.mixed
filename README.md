@@ -14,7 +14,7 @@ Rough execution elapsed times on Github Actions Ubuntu (does not include compile
 * Java 12.4s
 * Zig 16.4s
 
-Measuring execution elapsed times  off-line systems are more reliable than Github Actions (varying system-wide loads).
+Measuring execution elapsed times with off-line systems are more reliable than Github Actions (varying system-wide loads).
 All times below are expressed in elapsed seconds.
 
 ==================
