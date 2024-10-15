@@ -19,7 +19,7 @@ All times below are expressed in elapsed seconds.
 
 ==================
 
-Xubuntu 24.04.up-to-date (Acer A515-44-R2SA, AMD Ryzen 7 4700U 2- 4.1 GHz, 16GB RAM)
+Xubuntu 24.04.up-to-date (Acer A515-44-R2SA, AMD Ryzen 7 4700U @ 2.0 GHz, 16GB RAM)
 * Golang 4.84
 * Rust 4.86
 * C++ 4.85
